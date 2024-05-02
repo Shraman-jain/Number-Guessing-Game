@@ -1,8 +1,6 @@
 import streamlit as st
 import random
 
-
-
 def get_secret_number():
     return random.randint(1, 100)
 
@@ -36,8 +34,6 @@ def get_hint(number):
             for op2 in range(1,101):
                 if op1*op2==number:
                     return f"{op1}*{op2}=?"
-
-
 
 def main():
     st.write(
